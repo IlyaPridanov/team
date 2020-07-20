@@ -1,69 +1,11 @@
 .main {
-  padding-bottom: 190px;
-  padding-top: 91px;
+  background-color: $secondary-color-1;
+}
+
+.main__section {
+  padding: 20px;
   
-  background-image: 
-    $main-gradient,
-    url('../img/main-bcg.svg');
-  background-repeat: 
-    no-repeat,
-    no-repeat;
-  background-position: 
-    center,
-    calc(50% + 316px) top;
-}
-
-.main__caption {
-  margin: 0;
-  margin-bottom: 42px;
-  max-width: 515px;
-
-  font-family: $galien;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-  color: $primary-dark-color;
-}
-
-.main__text {
-  max-width: 425px;
-  margin-bottom: 78px;
-
-  font-family: $gilroy;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.05em;
-  color: $primary-dark-color;
-}
-
-.main__link {
-  width: 220px;
-}
-
-@media(max-width:$min-desktop) {
-  .main {
-    background-position: center,calc(50% + 380px) top;
-  }
-}
-
-@media(max-width:$tablet) {
-  .main {
-    padding-top: 30px;
-    padding-bottom: 75px;
-    background-image: $main-gradient;
-  }
-
-  .main__link,
-  .main__text,
-  .main__caption {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .main__caption {
-    font-size: 50px;
-    line-height: 1.1;
-  }
+  background-color: $primary-color-1;
+  border: 3px solid $primary-color-2;
+  border-radius: 25px;
 }

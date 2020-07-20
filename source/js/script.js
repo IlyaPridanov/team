@@ -4,6 +4,4 @@
 
 // Modules
 //= modules/openNav.js
-//= modules/openPopup.js
-//= modules/ajaxForm.js
-//= modules/formSend.js
+
