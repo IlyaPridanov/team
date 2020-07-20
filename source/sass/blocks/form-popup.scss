@@ -1,0 +1,136 @@
+.form-popup {
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $black-08-opacity;
+}
+
+.form-popup__btn-exit {
+  display: none;
+}
+
+.form-popup form {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 540px;
+  max-width: 100%;
+  padding: 54px 56px 56px;
+  overflow-y: scroll;  
+  max-height: 100%;
+
+  background-color: $white;
+  box-shadow: $form-shadow;
+  border-radius: 10px;
+}
+
+.form-popup__caption {
+  margin: 0;
+  margin-bottom: 49px;
+  text-transform: uppercase;
+}
+
+.form-popup label {
+  display: block;
+  margin-bottom: 32px;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;    
+  letter-spacing: 0.04em;    
+  color: $primary-dark-color;
+  opacity: 0.8;
+}
+
+.form-popup textarea {
+  resize: none;
+  min-height: 144px;
+}
+
+.form-popup textarea,
+.form-popup input {
+  margin-top: 10px;
+  padding: 20px 36px;
+  display: block;
+  width: 100%;
+
+  font-family: $gilroy;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;    
+  letter-spacing: 0.04em;    
+  color: $primary-dark-color;
+
+  border: 1px solid $primary-middle-color;
+  border-radius: 10px;
+  opacity: 0.4;
+
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 1;
+    outline: none;
+  }
+
+  &::placeholder {
+    font-family: $gilroy;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: $primary-dark-color;
+  }
+
+  &.invalid {
+    opacity: 1;
+    border-color: $secondary-color;
+  }
+}
+
+.form-popup__btn {
+  margin-top: 72px;
+  width: 100%;
+  border: none;
+  height: 72px;
+}
+
+@media(max-width:$tablet) {
+  .form-popup form {
+    padding: 30px 20px;
+  }
+
+  .form-popup__caption {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .form-popup__btn-exit {
+    position: absolute;
+    top: 59%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    padding: 0;
+
+    border: none;
+    background: none; 
+  }
+
+  .form-popup label {
+    margin-bottom: 25px;
+  }
+
+  .form-popup input, 
+  .form-popup textarea {
+    padding: 20px;
+  }
+
+  .form-popup__btn {
+    margin-top: 45px;
+  }
+
+}
