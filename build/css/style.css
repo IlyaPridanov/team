@@ -458,6 +458,7 @@ img {
   background-color: #0079f0; }
 
 .main__section {
+  height: 50vh;
   padding: 20px;
   background-color: #ffa500;
   border: 3px solid #ffff00;
@@ -465,6 +466,5 @@ img {
 
 .base__caption {
   margin: 0 auto;
-  min-height: 100vw;
   font-size: calc(100vw/7 - 0.1em);
   text-transform: uppercase; }
