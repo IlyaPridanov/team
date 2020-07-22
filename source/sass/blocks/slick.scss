@@ -1,0 +1,6 @@
+.slick-dots li button::before,
+.slick-dots li.slick-active button:before {
+  font-size: 60px;
+
+  color: $secondary-color-2;
+}

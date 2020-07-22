@@ -1,0 +1,14 @@
+.form {
+  border-radius: 10px;
+
+  background-color: $white;
+}
+
+.form__label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form__input {
+  grid-column: 1/3;
+}

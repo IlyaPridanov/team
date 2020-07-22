@@ -1,9 +1,23 @@
 @import "vendor/normalize";
+@import "vendor/bootstrap-grid";
+@import "vendor/slick";
+@import "vendor/slick.theme";
+@import "vendor/flipclock";
+
+
 @import "general/variables";
 @import "general/scafolding";
 @import "general/font";
 @import "general/mixin";
+@import "general/animations";
 
 @import "blocks/container";
 @import "blocks/main";
+@import "blocks/caption";
+@import "blocks/text";
 @import "blocks/base";
+@import "blocks/slider";
+@import "blocks/slick";
+@import "blocks/edge";
+@import "blocks/order";
+@import "blocks/form";
