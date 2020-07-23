@@ -1,6 +1,9 @@
 .form {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border-radius: 5px;
+  min-height: 100%;
 
   background-color: $white;
 }
@@ -67,7 +70,7 @@
 .form__button {
   @include hover();
 
-  margin: 30px auto 30px;
+  margin: 30px auto auto;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -4336,7 +4336,7 @@ img {
 
 .base__video {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4389,7 +4389,9 @@ img {
 
 @media (max-width: 650px) {
   .base__caption {
-    margin: 20px auto 60px; } }
+    margin: 20px auto 60px; }
+  .base__video iframe {
+    height: 250px; } }
 
 .slider__list {
   list-style: none;
@@ -4483,8 +4485,16 @@ img {
             transform: scale(0.6); } }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
   border-radius: 5px;
+  min-height: 100%;
   background-color: #ffffff; }
 
 .form__label {
@@ -4539,7 +4549,7 @@ img {
     visibility: visible; }
 
 .form__button {
-  margin: 30px auto 30px;
+  margin: 30px auto auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
