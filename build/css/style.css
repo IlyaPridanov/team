@@ -4344,7 +4344,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
   .base__video iframe {
-    max-width: 100%; }
+    max-width: 100%;
+    border: none; }
 
 .base__btn {
   margin: 0 auto;
